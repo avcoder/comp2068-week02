@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre><code><h2>
+var foo = getSync('//foo.com');
+var bar = getSync('//bar.com');
+var quz = getSync('//quz.com');
+
+console.log(foo);
+console.log(bar);
+console.log(quz);        
+</h2></code></pre>
+    <button id="run">Run</button>
+    <br>
+    <br>
+    <ul>
+        <li>
+            <a href="http://google.ca">Google</a>
+        </li>
+        <li>
+            <a href="https://georgiancollege.ca">Georgian</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <button>Click?</button>
+
+    <script>
+        const btn = document.querySelector('#run');
+
+        function getSync(url) {
+            console.log(`Requesting: ${url}`);
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > 5000) {
+                    break;
+                }
+            }
+            return {
+                url: url,
+                data: {}
+            }
+        }
+
+        btn.addEventListener('click', function () {
+            console.log('Running');
+            var foo = getSync('//foo.com');
+            var bar = getSync('//bar.com');
+            var quz = getSync('//quz.com');
+
+            console.log(foo);
+            console.log(bar);
+            console.log(quz);
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -448,6 +448,7 @@
       <section class="">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90 aligncenter">
+
           <h2>
             Answers...
           </h2>
@@ -455,8 +456,8 @@
           <div class="bg-white shadow">
             <ul class="flexblock steps">
               <li class="text-intro">
-                <b>The notion that JS is outdated for modern web is itself--outdated; JS has matured and changed to be the most
-                  popular, hottest language in modern web dev</b>
+                <b>Rather than being outdated; JS has matured and changed in the last several years to be the most popular,
+                  hottest language in modern web dev</b>
               </li>
               <li class="text-intro">
                 <b>Accept the fact that it's impossible to keep up with JS ecosystem. Develop a lifelong student/learning mindset.</b>
@@ -490,7 +491,7 @@
           <div class="bg-white shadow">
             <ul class="flexblock steps">
               <li class="text-intro">
-                <b>Why nonblocking.js do not do what we anticipate?</b>
+                <b>Why nonblocking.js do not do what we anticipate? Why we have to run again and again the following code?</b>
               </li>
               <li class="text-intro">
                 <b>Why is Javascript an asynchronous language?</b>
@@ -501,6 +502,65 @@
             </ul>
           </div>
           <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="aligncenter bg-apple">
+        <div class="wrap size-50">
+          <h3>Asynchronous</h3>
+          <p>Create an index.html and type inside script tag:</p>
+          <pre><code><h4>
+setTimeout(function () {
+    console.log('world');
+}, 2000);
+
+console.log('hello');
+  </h4></code></pre>
+          <a href="./test.html">See webpage</a>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="aligncenter bg-purple">
+        <div class="wrap size-50">
+          <h3>Synchronous</h3>
+          <pre><code><h4>
+var foo = getSync('//foo.com');
+var bar = getSync('//bar.com');
+var quz = getSync('//quz.com');
+
+console.log(foo);
+console.log(bar);
+console.log(quz);  
+    </h4></code></pre>
+          <a href="./test2.html">See webpage</a>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+      <section class="bg-primary">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              What is the event loop?
+            </h3>
+            <p>
+              <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ#t=0m51s">Watch from 52s to to 2:39</a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+              <div data-youtube data-youtube-id="8aGhZQkoFbQ" data-autoplay data-no-controls></div>
+            </div>
+            <!-- end .embed -->
+          </div>
+          <!-- end .content-left -->
         </div>
         <!-- .end .wrap -->
       </section>
@@ -553,6 +613,30 @@
             </ul>
           </div>
           <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-primary">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              Intro to Node.js with Ryan Dahl (2011)
+            </h3>
+            <p>
+              <a href="https://www.youtube.com/watch?v=jo_B4LTHi3I#t=6m09s">Watch from 6:09 to </a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+              <div data-youtube data-youtube-id="jo_B4LTHi3I" data-autoplay data-no-controls></div>
+            </div>
+            <!-- end .embed -->
+          </div>
+          <!-- end .content-left -->
         </div>
         <!-- .end .wrap -->
       </section>
@@ -623,55 +707,8 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="bg-primary">
-        <div class="wrap">
-          <div class="content-left">
-            <h3>
-              What is the event loop?
-            </h3>
-            <p>
-              <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Watch from </a>
-            </p>
-
-          </div>
-          <!-- end .content-left -->
-          <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-            <div class="embed">
-              <div data-youtube data-youtube-id="8aGhZQkoFbQ" data-autoplay data-no-controls></div>
-            </div>
-            <!-- end .embed -->
-          </div>
-          <!-- end .content-left -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
 
-
-      <section class="bg-primary">
-        <div class="wrap">
-          <div class="content-left">
-            <h3>
-              Intro to Node.js with Ryan Dahl (2011)
-            </h3>
-            <p>
-              <a href="https://www.youtube.com/watch?v=jo_B4LTHi3I#t=6m09s">Watch from 6:09 to </a>
-            </p>
-
-          </div>
-          <!-- end .content-left -->
-          <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-            <div class="embed">
-              <div data-youtube data-youtube-id="jo_B4LTHi3I" data-autoplay data-no-controls></div>
-            </div>
-            <!-- end .embed -->
-          </div>
-          <!-- end .content-left -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
       <section class="bg-primary">
         <div class="wrap">
