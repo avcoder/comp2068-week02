@@ -511,6 +511,8 @@
           <h3>Asynchronous</h3>
           <p>Create an index.html and type inside script tag:</p>
           <pre><code><h4>
+console.log('hi');
+
 setTimeout(function () {
     console.log('world');
 }, 2000);
@@ -539,6 +541,24 @@ console.log(quz);
         <!-- .end .wrap -->
       </section>
 
+      <section class="aligncenter bg-primary">
+        <div class="wrap size-90">
+          <h4>Tim Horton's Async Analogy
+
+          </h4>
+          <a href="./timhortons.md">
+            <img src="./static/images/timHortonsAnalogy.PNG" alt="Tim Hortons Analogy to asynchronous callbacks in JS">
+          </a>
+
+
+
+        </div>
+
+        <!-- .end .wrap -->
+      </section>
+
+
+
 
 
       <section class="bg-primary">
@@ -548,7 +568,7 @@ console.log(quz);
               What is the event loop?
             </h3>
             <p>
-              <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ#t=0m51s">Watch from 52s to to 2:39</a>
+              <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ#t=10m48s">Watch from 10:48 to to 15:11</a>
             </p>
 
           </div>
@@ -564,6 +584,87 @@ console.log(quz);
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section class="aligncenter bg-apple">
+        <div class="wrap size-50">
+          <h4>nonblocking.js</h4>
+          <pre><code><h5>
+const fs = require('fs');
+
+// load food list asynchronously
+fs.readFile('food.txt', 'utf8', function (err, food) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(food);
+  }
+});
+
+console.log('FOOD');
+
+fs.readFile('drinks.txt', 'utf8', function (err, drinks) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(drinks);
+  }
+});
+
+console.log('DRINKS');                        
+      </h5></code></pre>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-90 aligncenter">
+          <h2>
+            You asked...
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock steps">
+              <li class="text-intro">
+                <b>Why nonblocking.js do not do what we anticipate? Why we have to run again and again the following code?</b>
+              </li>
+              <li class="text-intro">
+                <b>Why is Javascript an asynchronous language?</b>
+              </li>
+              <li class="text-intro">
+                <b>What is Callback function?</b>
+              </li>
+            </ul>
+            <br>
+            <h2>
+              Answers...
+            </h2>
+            <br />
+            <div class="bg-white shadow">
+              <ul class="flexblock steps">
+                <li class="text-intro">
+                  <b>Because we are using asynchronous operations. We only ran the code again and again to prove to ourselves
+                    that the output is not predictable</b>
+                </li>
+                <li class="text-intro">
+                  <b>Because JS uses a call stack (that lives in V8), WebAPIs (that live in the browser), callback queue, and
+                    an event loop
+                  </b>
+                </li>
+                <li class="text-intro">
+                  <b>Callback functions are just a normal JavaScript function that is called when an asynchronous operation
+                    is finished.</b>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
 
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
@@ -774,7 +875,7 @@ console.log(quz);
           <li>https://dzone.com/articles/how-web-development-changed-for-me-over-the-last-2</li>
           <li>https://auth0.com/blog/a-brief-history-of-javascript/</li>
           <li>https://www.youtube.com/watch?v=jo_B4LTHi3I</li>
-          <li></li>
+          <li>https://www.codementor.io/aminmeyghani/learn-asynchronous-javascript-in-2018-fmbib9obw</li>
           <li></li>
           <li></li>
           <li></li>

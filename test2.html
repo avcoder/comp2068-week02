@@ -31,16 +31,20 @@ console.log(quz);
     </ul>
     <br>
     <br>
-    <button>Click?</button>
+    <button id='hello'>Say hello</button>
 
     <script>
         const btn = document.querySelector('#run');
+        const btn_hello = document.querySelector('#hello');
 
         function getSync(url) {
+            const milliseconds = 5000;
             console.log(`Requesting: ${url}`);
+
+            // this is how to do a sleep in javascript: do a synchronous loop
             var start = new Date().getTime();
             for (var i = 0; i < 1e7; i++) {
-                if ((new Date().getTime() - start) > 5000) {
+                if ((new Date().getTime() - start) > milliseconds) {
                     break;
                 }
             }
@@ -61,6 +65,7 @@ console.log(quz);
             console.log(quz);
         });
 
+        btn_hello.addEventListener('click', () => console.log('hello'));
 
     </script>
 </body>
