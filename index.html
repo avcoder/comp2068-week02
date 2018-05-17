@@ -962,6 +962,272 @@ http
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              JS Objects
+            </h3>
+            <p>
+              <a href="https://www.youtube.com/watch?v=RO1Wnu-xKoY#t=16m03s">Watch from 16:03 to 17:18</a>
+            </p>
+            <pre><code><h4>
+var data = {
+  college: "Georgian",
+  city: "Barrie"
+}
+
+console.log(data.college)
+// above will output: Georgian
+</h4></code></pre>
+            <p>Try adding a nested object called program that has two properties (code, year) then try displaying those values</p>
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+              <div data-youtube data-youtube-id="RO1Wnu-xKoY" data-autoplay></div>
+            </div>
+            <!-- end .embed -->
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              Fetch
+            </h3>
+
+            <pre><code><h4>
+// change ###### to your Github username
+fetch('https://api.github.com/users/######') 
+.then(function(res) {
+  return res.json();
+})
+.then(function(data) {
+  console.log(data);
+});
+    </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p class="text-intro">Store your data inside an array then display some property values from the bject that you got</p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch</a>
+            </p>
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              template literals
+            </h3>
+            <pre><code><h4>
+  var name = `Ryan`;
+  
+  console.log(`Hi my name is ${name}`);
+          </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p class="text-intro">
+              <a href="https://css-tricks.com/template-literals/">https://css-tricks.com/template-literals/</a>
+            </p>
+
+            <p class="text-intro">Try displaying in the console the template literal `My Github username is ${ ??? }` using what you fetched</p>
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              document.querySelector() and .textContent
+            </h3>
+            <pre><code><h4>
+var element = document.querySelector(".myclass");
+
+console.log(element);
+// above will display the DOM node element for that particular HTML tag you chose
+
+console.log(element.textContent);
+// above will display text inside the html tag
+      </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p class="text-intro">If your searching for a class then prepend a dot before the class name: document.querySelector('.highlight')</p>
+            <p class="text-intro">If your searching for an id, then prepend a # before the id name: document.querySelector('#logo')</p>
+
+            <p class="text-intro">Instead of displaying to console, display some data on the webpage using .textContent Try to emulate the data
+              shown on your actual Github profile. Ignore CSS styling for now, just display the data</p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector</a>
+            </p>
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              let and const
+            </h3>
+            <pre><code><h4>
+var x = 1; // not block scoped
+let x = 1; // block scoped           
+const number = 42; // can't change value
+        </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</a>
+            </p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const</a>
+            </p>
+            <p>
+              <a href="http://exploringjs.com/es6/ch_core-features.html#sec_from-var-to-const">http://exploringjs.com/es6/ch_core-features.html#sec_from-var-to-const</a>
+            </p>
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              .innerHTML
+            </h3>
+            <pre><code><h4>
+element.innerHTML = `&lt;h1&gt;Hello world&lt;/h1&gt;`;
+          </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML</a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              .addEventListener
+            </h3>
+            <pre><code><h4>
+// add event listener to button
+var el = document.querySelector("button");
+el.addEventListener("click", modifyText);
+            </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              arrow functions
+            </h3>
+            <pre><code><h4>
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));
+// expected output: Array [8, 6, 7, 9]
+            </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              array push, filter, map, spread operator
+            </h3>
+            <pre><code><h4>
+
+              </h4></code></pre>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <p>
+              <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push</a>
+            </p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>
+            </p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a>
+            </p>
+            <p>
+              <a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Spread_operator">https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Spread_operator</a>
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
 
 
       <section class="">
@@ -977,13 +1243,12 @@ http
                 JS has matured due to AJAX, Gmail/Google Maps, JQuery, Node, Chrome (V8), ES6,
               </li>
               <li>
-                The web has changed pretty quickly within the last 20 years. More and more logic moves from the server side to the client
-                side. JS moved to the server (i.e. Node) The server part can be reduced to just serve static files and data
-                over REST services.
+                Web development has changed pretty quickly within the last few years. More and more logic moves from the server side to the
+                client side. JS moved to the server (i.e. Node) The server part can be reduced to just serve static files
+                and data over REST services. Web technology also moved to the desktop (i.e. Electron)
               </li>
-              <li>More complex JavaScript needs to be written on the client side (i.e. Angular, React, Vue)</li>
               <li>
-                Web technology also moved to the desktop (i.e. Electron)
+                Learned some ES6 updates to the JS language
               </li>
             </ul>
           </div>
